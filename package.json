@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "test:leads": "bun run test/leadScraperTest.ts"
+    "test:leads": "bun run test/leadScraperTest.ts",
+    "test:email": "bun run test/emailGeneratorTest.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
