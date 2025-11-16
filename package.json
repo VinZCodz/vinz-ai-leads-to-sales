@@ -5,10 +5,12 @@
   "private": true,
   "scripts": {
     "test:leads": "bun run test/leadScraperTest.ts",
-    "test:email": "bun run test/emailGeneratorTest.ts"
+    "test:email": "bun run test/emailGeneratorTest.ts",
+    "test:email:send": "bun run test/mailerTest.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/nodemailer": "^7.0.3"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -21,6 +23,7 @@
     "@langchain/langgraph": "^1.0.2",
     "@langchain/tavily": "^1.0.0",
     "langchain": "^1.0.4",
+    "nodemailer": "^7.0.10",
     "zod": "^4.1.12"
   }
 }
